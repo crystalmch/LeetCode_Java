@@ -32,7 +32,6 @@ public class Solution {
 				if (i > 1) {
 					int[] left = Arrays.copyOfRange(nums, 0, i - 1);
 					sum += sol.rob(left);
-					System.out.println(nums[i] + " left " + "0 to " + (i - 2));
 				}
 				if (i < len - 2) {
 					int[] right = Arrays.copyOfRange(nums, i + 2, len);
